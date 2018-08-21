@@ -7,32 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
-	<%
-		
-		for(int i=1;i<5;i++){
-	
-	%>
-		<h<%=i%>><%= getName() %></h<%=i%>>
-	<%
-		}
-		
-		
-	%>
-	<%-- JSP 주석 --%>
-	<!-- dddd -->
-	<%
-	// JAVA 주석%>
-	<%! private String name = "hyobyung";
-		private int count = 0;
-		public String getName(){
-			count++;
-			return name+count;	
-		}
-	%>
-	
-	
-	
-	<%= getName() %>
+	This is redirected page
 </body>
 </html>

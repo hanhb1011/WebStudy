@@ -7,32 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
 	<%
-		
-		for(int i=1;i<5;i++){
-	
-	%>
-		<h<%=i%>><%= getName() %></h<%=i%>>
-	<%
-		}
-		
-		
-	%>
-	<%-- JSP 주석 --%>
-	<!-- dddd -->
-	<%
-	// JAVA 주석%>
-	<%! private String name = "hyobyung";
-		private int count = 0;
-		public String getName(){
-			count++;
-			return name+count;	
-		}
+		int rand1 = (int)request.getAttribute("rand1");
+		int rand2 = (int)request.getAttribute("rand2");
+		int sum = (int)request.getAttribute("sum");
 	%>
 	
+	랜덤 1 값 : <%=rand1 %><br>
+	랜덤 2 값: <%= rand2 %><br>
+	더한 값 : <%= sum %><br>
 	
-	
-	<%= getName() %>
 </body>
 </html>

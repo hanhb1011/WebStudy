@@ -7,32 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+
 	<%
-		
-		for(int i=1;i<5;i++){
+	
+		StringBuffer url = request.getRequestURL();
+		String uri = request.getRequestURI();
 	
 	%>
-		<h<%=i%>><%= getName() %></h<%=i%>>
-	<%
-		}
-		
-		
-	%>
-	<%-- JSP 주석 --%>
-	<!-- dddd -->
-	<%
-	// JAVA 주석%>
-	<%! private String name = "hyobyung";
-		private int count = 0;
-		public String getName(){
-			count++;
-			return name+count;	
-		}
-	%>
+
+	<%= url %>
+	<br>
+	<%= uri %>
 	
-	
-	
-	<%= getName() %>
 </body>
 </html>
